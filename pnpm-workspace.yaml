@@ -1,5 +1,6 @@
 onlyBuiltDependencies:
   - esbuild
+  - floorball-saisonmanager
 packages:
   - 'packages/*'
   - 'apps/*'
