@@ -3,5 +3,6 @@
 
 
 <a href="#/Scoreboard">Scoreboard</a>
+<a href="#/MatchSelect">MatchSelect</a>
 <a href="#/Match">Match</a>
 <a href="#/Settings">Settings</a>

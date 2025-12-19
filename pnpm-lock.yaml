@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      floorball-saisonmanager:
+        specifier: github:nonsensation/floorball-saisonmanager
+        version: https://codeload.github.com/nonsensation/floorball-saisonmanager/tar.gz/a929f98ef22b7c936fc295d35c932339aad820ff
     devDependencies:
       '@sveltejs/adapter-static':
         specifier: ^3.0.10
@@ -541,6 +545,10 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  floorball-saisonmanager@https://codeload.github.com/nonsensation/floorball-saisonmanager/tar.gz/a929f98ef22b7c936fc295d35c932339aad820ff:
+    resolution: {tarball: https://codeload.github.com/nonsensation/floorball-saisonmanager/tar.gz/a929f98ef22b7c936fc295d35c932339aad820ff}
+    version: 0.0.2
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -1141,6 +1149,8 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
+
+  floorball-saisonmanager@https://codeload.github.com/nonsensation/floorball-saisonmanager/tar.gz/a929f98ef22b7c936fc295d35c932339aad820ff: {}
 
   fsevents@2.3.3:
     optional: true

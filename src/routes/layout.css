@@ -1,2 +1,258 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@theme {
+  /* Background colors */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+
+  /* Text colors */
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-text-accent: var(--text-accent);
+  --color-text-inverse: var(--text-inverse);
+
+  /* Border colors */
+  --color-border-main: var(--border-main);
+  --color-border-hover: var(--border-hover);
+  --color-border-subtle: var(--border-subtle);
+
+  /* Accent colors */
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-surface: var(--accent-surface);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-surface: var(--accent-secondary-surface);
+
+  /* Status colors */
+  --color-success: var(--success);
+  --color-success-surface: var(--success-surface);
+  --color-success-muted: var(--success-muted);
+  --color-warning: var(--warning);
+  --color-warning-surface: var(--warning-surface);
+  --color-warning-muted: var(--warning-muted);
+  --color-danger: var(--danger);
+  --color-danger-surface: var(--danger-surface);
+  --color-danger-muted: var(--danger-muted);
+  --color-info: var(--info);
+  --color-info-surface: var(--info-surface);
+  --color-info-muted: var(--info-muted);
+
+  /* Gradient Stops */
+  --color-gradient-from: var(--gradient-from);
+  --color-gradient-via: var(--gradient-via);
+  --color-gradient-to: var(--gradient-to);
+
+  /* Glass effects */
+  --color-glass-bg: var(--glass-bg);
+  --color-glass-dark-bg: var(--glass-dark-bg);
+  --color-glass-border: var(--glass-border);
+
+  /* Scrollbar */
+  --color-scrollbar-track: var(--scrollbar-track);
+  --color-scrollbar-thumb: var(--scrollbar-thumb);
+  --color-scrollbar-thumb-hover: var(--scrollbar-thumb-hover);
+}
+
+:root {
+  /* Background colors */
+  --bg-primary: #f8fafc;
+  /* slate-50 */
+  --bg-secondary: #f1f5f9;
+  /* slate-100 */
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --bg-card-hover: rgba(255, 255, 255, 0.9);
+
+  /* Text colors */
+  --text-main: #0f172a;
+  /* slate-900 */
+  --text-muted: #64748b;
+  /* slate-500 */
+  --text-accent: #0891b2;
+  /* cyan-600 */
+  --text-inverse: #ffffff;
+
+  /* Border colors */
+  --border-main: #e2e8f0;
+  /* slate-200 */
+  --border-hover: #a5f3fc;
+  /* cyan-200 */
+  --border-subtle: #f1f5f9;
+  /* slate-100 */
+
+  /* Accent colors */
+  --accent-primary: #0891b2;
+  /* cyan-600 */
+  --accent-surface: #ecfeff;
+  /* cyan-50 */
+  --accent-secondary: #7c3aed;
+  /* violet-600 */
+  --accent-secondary-surface: #f5f3ff;
+  /* violet-50 */
+
+  /* Status colors - Success (green) */
+  --success: #059669;
+  /* emerald-600 */
+  --success-surface: #d1fae5;
+  /* emerald-100 */
+  --success-muted: #6ee7b7;
+  /* emerald-300 */
+
+  /* Status colors - Warning (amber) */
+  --warning: #d97706;
+  /* amber-600 */
+  --warning-surface: #fef3c7;
+  /* amber-100 */
+  --warning-muted: #fcd34d;
+  /* amber-300 */
+
+  /* Status colors - Danger (red) */
+  --danger: #dc2626;
+  /* red-600 */
+  --danger-surface: #fee2e2;
+  /* red-100 */
+  --danger-muted: #fca5a5;
+  /* red-300 */
+
+  /* Status colors - Info (blue) */
+  --info: #2563eb;
+  /* blue-600 */
+  --info-surface: #dbeafe;
+  /* blue-100 */
+  --info-muted: #93c5fd;
+  /* blue-300 */
+
+  /* Gradient Stops */
+  --gradient-from: #eff6ff;
+  /* blue-50 */
+  --gradient-via: #f8fafc;
+  /* slate-50 */
+  --gradient-to: #f1f5f9;
+  /* slate-100 */
+
+  /* Glass effects */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-dark-bg: rgba(15, 23, 42, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.2);
+
+  /* Scrollbar */
+  --scrollbar-track: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.1);
+  --scrollbar-thumb-hover: rgba(0, 0, 0, 0.2);
+}
+
+.dark {
+  /* Background colors */
+  --bg-primary: #020617;
+  /* slate-950 */
+  --bg-secondary: #0f172a;
+  /* slate-900 */
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --bg-card-hover: rgba(255, 255, 255, 0.1);
+
+  /* Text colors */
+  --text-main: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-accent: #22d3ee;
+  /* cyan-400 */
+  --text-inverse: #0f172a;
+  /* slate-900 */
+
+  /* Border colors */
+  --border-main: rgba(255, 255, 255, 0.05);
+  --border-hover: rgba(255, 255, 255, 0.2);
+  --border-subtle: rgba(255, 255, 255, 0.03);
+
+  /* Accent colors */
+  --accent-primary: #22d3ee;
+  /* cyan-400 */
+  --accent-surface: rgba(8, 145, 178, 0.1);
+  --accent-secondary: #a78bfa;
+  /* violet-400 */
+  --accent-secondary-surface: rgba(124, 58, 237, 0.1);
+
+  /* Status colors - Success (green) */
+  --success: #10b981;
+  /* emerald-500 */
+  --success-surface: rgba(16, 185, 129, 0.1);
+  --success-muted: rgba(16, 185, 129, 0.6);
+
+  /* Status colors - Warning (amber) */
+  --warning: #f59e0b;
+  /* amber-500 */
+  --warning-surface: rgba(245, 158, 11, 0.1);
+  --warning-muted: rgba(245, 158, 11, 0.6);
+
+  /* Status colors - Danger (red) */
+  --danger: #ef4444;
+  /* red-500 */
+  --danger-surface: rgba(239, 68, 68, 0.1);
+  --danger-muted: rgba(239, 68, 68, 0.6);
+
+  /* Status colors - Info (blue) */
+  --info: #3b82f6;
+  /* blue-500 */
+  --info-surface: rgba(59, 130, 246, 0.1);
+  --info-muted: rgba(59, 130, 246, 0.6);
+
+  /* Gradient Stops */
+  --gradient-from: #0f172a;
+  /* slate-900 */
+  --gradient-via: #020617;
+  /* slate-950 */
+  --gradient-to: #020617;
+  /* slate-950 */
+
+  /* Glass effects */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-dark-bg: rgba(15, 23, 42, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  /* Scrollbar */
+  --scrollbar-track: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.2);
+}
+
+/* Global utility classes */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-dark {
+  background: var(--glass-dark-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Details/Summary styling */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary {
+  list-style: none;
+}
