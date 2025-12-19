@@ -3,6 +3,7 @@
     import { Saisonmanager as SM } from "floorball-saisonmanager";
     import { onMount, tick } from "svelte";
     import { goto } from "$app/navigation";
+    import { base } from '$app/paths';
 
 
     const API_BASE = "https://saisonmanager.de/api/v2";
@@ -284,7 +285,7 @@
                                                                     type="button"
                                                                     onclick={() => {
                                                                         selectGame(game, i)
-                                                                        goto(`#/Match?gameId=${game.game_id}`)
+                                                                        goto(`${base}/#/Match?gameId=${game.game_id}`)
                                                                     }}
                                                                     class="w-full flex flex-col md:flex-row md:items-center justify-between p-4 bg-card rounded-xl border border-border-main shadow-sm hover:shadow-md hover:border-border-hover hover:bg-card-hover transition-all group/game cursor-pointer text-left"
                                                                 >

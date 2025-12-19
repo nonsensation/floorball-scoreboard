@@ -22,6 +22,9 @@ const config = {
 		},
 		router: {
 			type: 'hash'
+		},
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/floorball-scoreboard' : '',
 		}
 	}
 }

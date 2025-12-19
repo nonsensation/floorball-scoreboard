@@ -2,6 +2,7 @@
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import { onMount, type Snippet } from 'svelte';
+    import { base } from '$app/paths';
 
 	let { children }: { children: Snippet } = $props();
 	let isDark = $state(false);
@@ -67,9 +68,9 @@
 
 		<!-- Desktop Nav -->
 		<div class="hidden sm:flex items-center gap-6 text-sm font-medium">
-			<a href="/#/MatchSelect" class="hover:text-text-accent transition-colors">Matches</a>
-			<a href="/#/Match" class="hover:text-text-accent transition-colors">Live Game</a>
-			<a href="/#/Settings" class="hover:text-text-accent transition-colors">Settings</a>
+			<a href="${base}/#/MatchSelect" class="hover:text-text-accent transition-colors">Matches</a>
+			<a href="${base}/#/Match" class="hover:text-text-accent transition-colors">Live Game</a>
+			<a href="${base}/#/Settings" class="hover:text-text-accent transition-colors">Settings</a>
 		</div>
 
 		<!-- Actions -->
